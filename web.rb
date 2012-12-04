@@ -11,5 +11,5 @@ get '*' do
     new_host = host_map[host]
   end
 
-  redirect "http://"+new_host+params['splat'][0]+host
+  redirect "http://"+new_host+params['splat'][0]
 end
