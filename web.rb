@@ -11,5 +11,6 @@ get '*' do
     new_host = host_map[host]
   end
 
+  p HOSTNAME
   p "http://"+new_host+params['splat'][0]+host
 end
