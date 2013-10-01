@@ -4,8 +4,8 @@ require 'socket'
 
 get '*' do
   host     = Socket.gethostname
-  new_host = "blog.nodrew.com"
-  host_map = {'Drews-MacBook-Pro.local' => 'nodrew.com', 'nodrew.com' => 'blog.nodrew.com', 'www.nodrew.com' => 'blog.nodrew.com'}
+  new_host = "dbtlr.com"
+  host_map = {'Drews-MacBook-Pro.local' => 'dbtlr.com', 'nodrew.com' => 'dbtlr.com', 'www.nodrew.com' => 'dbtlr.com'}
 
   if host_map[host] 
     new_host = host_map[host]
